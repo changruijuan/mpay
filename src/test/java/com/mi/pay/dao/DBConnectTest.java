@@ -1,14 +1,16 @@
 package com.mi.pay.dao;
 
+import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.sql.Statement;
-import java.sql.Connection;
 
 /**
  * Created by Ruijuan on 6/5/18.
  */
 public class DBConnectTest {
+
+
 	public void test1() {
 		Statement stmt = null;
 		Connection conn = null;
@@ -51,6 +53,7 @@ public class DBConnectTest {
 				}
 		}
 	}
+
 
 	public static void main(String[] argv) {
 		DBConnectTest dbConnectTest = new DBConnectTest();

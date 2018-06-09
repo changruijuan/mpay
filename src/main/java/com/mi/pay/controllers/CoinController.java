@@ -23,7 +23,7 @@ public class CoinController {
 	 * @return
 	 */
 	@Get("amount")
-	public String getAmountByUid(@Param("uid") @NotBlank int uid) {
+	public String getAmountByUid(@Param("uid") @ParamDesc(isRequest = true) int uid) {
 		return JsonResponse.respToString(coinService.getAmountByUid(uid));
 	}
 
